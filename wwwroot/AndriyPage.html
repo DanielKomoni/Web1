@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<title>
+    who is lox
+</title>
+
+<header style="text-align:center">
+    <button onclick="Audience()" class="button1"> нажми сюда</button>
+    <h1 id="date"></h1>
+</header>
+
+<style>
+    .Grid-container {
+        transform: translate(0px, 50%);
+        background-color: aqua;
+        display: grid;
+        grid-template-rows: 100% 100%;
+        grid-template-columns: 100%;
+    }
+
+        .Grid-container > div {
+            font-size: 30px;
+            text-align: center;
+        }
+
+    .button1 {
+        color: green;
+        background-color: blue;
+    }
+</style>
+
+<script>
+
+  const d=new Date();
+  document.getElementById("date").innerHTML=d.toUTCString();
+
+function Audience() {
+let x=document.getElementById("main_phrase");
+x.style.fontSize="50px";
+x.style.color="red";
+}
+</script>
+
+<body>
+    <div class="Grid-container">
+        <div> <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" alt="cat" height="200" width="200"> </div>
+        <div id="main_phrase"> всiм добра i позитива</div>
+    </div>
+
+</body>
+</html>
